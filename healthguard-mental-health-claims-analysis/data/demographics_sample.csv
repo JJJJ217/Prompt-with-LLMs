@@ -1,0 +1,11 @@
+PatientID, Age, Gender, Income, EmploymentStatus, Region, EducationLevel, MentalHealthDiagnosis, TreatmentType, TreatmentDuration
+1, 25, Female, 55000, Employed, Sydney, Bachelor’s, Anxiety, Therapy, 12
+2, 34, Male, 72000, Employed, Regional NSW, Master’s, Depression, Medication, 24
+3, 45, Female, 48000, Unemployed, Sydney, High School, Anxiety, Therapy, 6
+4, 29, Male, 60000, Employed, Regional NSW, Bachelor’s, Depression, Therapy, 18
+5, 52, Female, 85000, Employed, Sydney, PhD, Bipolar Disorder, Medication, 36
+6, 38, Male, 30000, Unemployed, Regional NSW, High School, Anxiety, Therapy, 12
+7, 41, Female, 72000, Employed, Sydney, Bachelor’s, Depression, Medication, 24
+8, 30, Male, 40000, Employed, Regional NSW, Associate’s, Anxiety, Therapy, 12
+9, 27, Female, 65000, Employed, Sydney, Bachelor’s, Depression, Medication, 6
+10, 50, Male, 90000, Employed, Regional NSW, Master’s, Bipolar Disorder, Therapy, 30

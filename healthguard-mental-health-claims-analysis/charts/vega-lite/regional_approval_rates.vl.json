@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart showing the approval rates of therapist reimbursement requests by region.",
+  "data": {
+    "url": "data/approvals_by_region_sample.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Region",
+      "type": "ordinal",
+      "title": "Region"
+    },
+    "y": {
+      "field": "Approval Rate",
+      "type": "quantitative",
+      "title": "Approval Rate (%)"
+    },
+    "color": {
+      "field": "Approval Rate",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0, 100],
+        "range": ["#f9d9d9", "#ff0000"]
+      },
+      "legend": {
+        "title": "Approval Rate Color Scale"
+      }
+    }
+  },
+  "title": {
+    "text": "Therapist Reimbursement Approval Rates by Region",
+    "fontSize": 16
+  }
+}
