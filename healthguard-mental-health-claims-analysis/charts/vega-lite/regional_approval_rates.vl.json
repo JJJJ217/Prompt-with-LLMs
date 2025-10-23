@@ -1,38 +1,60 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A bar chart showing the approval rates of therapist reimbursement requests by region.",
+  "description": "Approval rates of therapist reimbursement requests by region.",
   "data": {
-    "url": "data/approvals_by_region_sample.csv",
-    "format": {
-      "type": "csv"
-    }
+    "values": [
+      {
+        "Region": "Sydney",
+        "ApprovalRate": 85
+      },
+      {
+        "Region": "Regional NSW",
+        "ApprovalRate": 62
+      },
+      {
+        "Region": "Melbourne",
+        "ApprovalRate": 78
+      },
+      {
+        "Region": "Brisbane",
+        "ApprovalRate": 75
+      },
+      {
+        "Region": "Adelaide",
+        "ApprovalRate": 70
+      },
+      {
+        "Region": "Perth",
+        "ApprovalRate": 80
+      },
+      {
+        "Region": "Hobart",
+        "ApprovalRate": 65
+      },
+      {
+        "Region": "Darwin",
+        "ApprovalRate": 60
+      },
+      {
+        "Region": "Canberra",
+        "ApprovalRate": 72
+      },
+      {
+        "Region": "Gold Coast",
+        "ApprovalRate": 77
+      }
+    ]
   },
   "mark": "bar",
   "encoding": {
     "x": {
       "field": "Region",
-      "type": "ordinal",
-      "title": "Region"
+      "type": "nominal"
     },
     "y": {
-      "field": "Approval Rate",
+      "field": "ApprovalRate",
       "type": "quantitative",
       "title": "Approval Rate (%)"
-    },
-    "color": {
-      "field": "Approval Rate",
-      "type": "quantitative",
-      "scale": {
-        "domain": [0, 100],
-        "range": ["#f9d9d9", "#ff0000"]
-      },
-      "legend": {
-        "title": "Approval Rate Color Scale"
-      }
     }
-  },
-  "title": {
-    "text": "Therapist Reimbursement Approval Rates by Region",
-    "fontSize": 16
   }
 }

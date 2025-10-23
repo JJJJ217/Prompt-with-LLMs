@@ -1,38 +1,33 @@
 {
-  "description": "A line chart showing the trend of mental health claims over time.",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Trend of total mental health claims amount by year.",
   "data": {
-    "url": "data/claims_sample.csv",
-    "format": {
-      "type": "csv"
-    }
+    "values": [
+      {
+        "Year": 2023,
+        "TotalClaimAmount": 20700
+      },
+      {
+        "Year": 2024,
+        "TotalClaimAmount": 21300
+      },
+      {
+        "Year": 2025,
+        "TotalClaimAmount": 10900
+      }
+    ]
   },
   "mark": "line",
   "encoding": {
     "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": "Date"
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year"
     },
     "y": {
-      "field": "claims_count",
+      "field": "TotalClaimAmount",
       "type": "quantitative",
-      "title": "Number of Claims"
-    },
-    "tooltip": [
-      {
-        "field": "date",
-        "type": "temporal",
-        "title": "Date"
-      },
-      {
-        "field": "claims_count",
-        "type": "quantitative",
-        "title": "Number of Claims"
-      }
-    ]
-  },
-  "title": {
-    "text": "Trend of Mental Health Claims Over Time",
-    "fontSize": 16
+      "title": "Total Claim Amount"
+    }
   }
 }
